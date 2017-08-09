@@ -1,0 +1,46 @@
+{"faq": [
+  {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day"],
+         "responses": ["Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye"],
+         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+        },
+        {"tag": "networking",
+         "patterns": ["on the domain", "difference between on domain", "domain", "on domain vs not on domain"],
+         "responses": ["Please see following response", "A short summary is that with on-domain you use your Employee account to log in and do not have administrative privileges. Off-domain, on the other hand, uses local accounts but give you the option of being an administrator."],
+         "context_set": "domain"
+        },
+        {"tag": "access",
+         "patterns": ["new computer internet access", "latest computer net access", "mac book internet"],
+         "responses": ["If you have a laptop, then you should have access to the campus wireless network. In most cases, this should be sufficient. However, if you are in an office and require a wired connection, then please send the help desk an email describing your situation and we will work on a solution that best fits your needs.",
+           "We are working on your Mac internet access"]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"]
+        },
+        {"tag": "hours",
+         "patterns": ["What hours are you open?", "What are your hours?", "When are you open?" ],
+         "responses": ["We're open every day 9am-9pm", "Our hours are 9am-9pm every day"]
+        },
+        {"tag": "Reservations",
+         "patterns": ["How many rooms are available", "Total rooms", "Reservation"],
+         "responses": ["You have 12 rooms for reservation", "Total of 12 rooms available for booking"],
+         "context_set": "reservationday"
+        },
+
+        {"tag": "opentoday",
+         "patterns": ["Are you open today?", "When do you open today?", "What are your hours today?"],
+         "responses": ["We're open every day from 9am-9pm", "Our hours are 9am-9pm every day"]
+        },
+
+        {"tag": "today",
+         "patterns": ["book room today", "book a room"],
+         "responses": ["I've booked you Seattle conf. room", "Seattle conf. room booking for today"],
+         "context_filter": "reservationday"
+        }
+   ]
+}
